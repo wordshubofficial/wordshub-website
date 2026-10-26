@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="WORDS HUB — motivation, mindset, growth and inspiration.">
+  <title>WORDS HUB — Find Your Drive</title>
+  <link rel="icon" href="assets/wordshub-logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="announcement">A better mindset starts with one small step. <span>එක් කුඩා පියවරකින් ආරම්භ කරන්න.</span></div>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="WORDS HUB home"><img src="assets/wordshub-logo.png" alt="WORDS HUB logo"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home" data-en="Home" data-si="මුල් පිටුව">Home</a>
+      <a href="#videos" data-en="Videos" data-si="වීඩියෝ">Videos</a>
+      <a href="#blog" data-en="Blog" data-si="ලිපි">Blog</a>
+      <a href="#polls" data-en="Polls" data-si="මත විමසුම්">Polls</a>
+      <a href="#reviews" data-en="Reviews" data-si="සමාලෝචන">Reviews</a>
+      <a href="#about" data-en="About" data-si="අප ගැන">About</a>
+    </nav>
+    <div class="header-actions">
+      <button id="languageToggle" class="language-btn" aria-label="Switch language">සිංහල</button>
+      <a class="button button-small" href="#newsletter" data-en="Stay Inspired" data-si="අලුත් දේ ලබාගන්න">Stay Inspired</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span><span data-en="YOUR DAILY DOSE OF GROWTH" data-si="ඔබේ දෛනික වර්ධනයට">YOUR DAILY DOSE OF GROWTH</span></p>
+        <h1 data-en="Become the person<br>you know you can be." data-si="ඔබට විය හැකි<br>හොඳම ඔබ බවට පත්වන්න.">Become the person<br>you know you can be.</h1>
+        <p class="hero-copy" data-en="Ideas that shift your mindset. Stories that fuel your courage. Small steps that create a stronger you." data-si="ඔබේ සිතුවිලි වෙනස් කරන අදහස්. ඔබේ ධෛර්යය වැඩි කරන කතා. ඔබව ශක්තිමත් කරන කුඩා පියවර.">Ideas that shift your mindset. Stories that fuel your courage. Small steps that create a stronger you.</p>
+        <div class="hero-actions">
+          <a class="button" href="#blog" data-en="Explore Inspiration ↗" data-si="ආශ්වාදය සොයන්න ↗">Explore Inspiration ↗</a>
+          <a class="text-link" href="#videos" data-en="Watch videos" data-si="වීඩියෝ බලන්න">Watch videos <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="pulse"></span><span data-en="A community built on growth, not perfection." data-si="පරිපූර්ණත්වය නොව වර්ධනය අරමුණු කරගත් ප්‍රජාවක්.">A community built on growth, not perfection.</span></div>
+      </div>
+      <div class="hero-side">
+        <div class="quote-card">
+          <span class="quote-mark">“</span>
+          <p data-en="Your future is shaped by what you do consistently, not occasionally." data-si="ඔබේ අනාගතය හැඩගැසෙන්නේ ඉඳහිට කරන දේවලින් නොව, නිරන්තරයෙන් කරන දේවලිනි.">Your future is shaped by what you do consistently, not occasionally.</p>
+          <div class="quote-footer"><span>WORDS HUB</span><span>01 / MINDSET</span></div>
+        </div>
+        <div class="floating-tag tag-top">MINDSET <span>✳</span></div>
+        <div class="floating-tag tag-bottom"><span class="tag-dot"></span> KEEP MOVING FORWARD</div>
+      </div>
+      <div class="hero-bottom"><span>01 — MINDSET</span><span>02 — DISCIPLINE</span><span>03 — GROWTH</span><span class="hero-bottom-right">SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="ticker" aria-label="Motivation topics"><div class="ticker-track">GROW THROUGH IT <span>✳</span> STAY DISCIPLINED <span>✳</span> THINK BIGGER <span>✳</span> START TODAY <span>✳</span> GROW THROUGH IT <span>✳</span> STAY DISCIPLINED <span>✳</span></div></section>
+
+    <section class="section intro-section" id="about">
+      <div class="section-kicker">01 / <span data-en="OUR PURPOSE" data-si="අපේ අරමුණ">OUR PURPOSE</span></div>
+      <div class="intro-grid">
+        <h2 data-en="Motivation is a spark.<br><em>Growth is the journey.</em>" data-si="අභිප්‍රේරණය ආරම්භයයි.<br><em>වර්ධනය ගමනයි.</em>">Motivation is a spark.<br><em>Growth is the journey.</em></h2>
+        <div><p data-en="WORDS HUB is a space for people who want to think clearer, build discipline and keep moving forward — one decision at a time." data-si="WORDS HUB යනු පැහැදිලිව සිතීමට, විනය ගොඩනඟා ගැනීමට සහ එක් තීරණයකින් එක් තීරණයකට ඉදිරියට යාමට කැමති අය සඳහා වූ අවකාශයකි.">WORDS HUB is a space for people who want to think clearer, build discipline and keep moving forward — one decision at a time.</p><a class="underlined-link" href="#blog" data-en="Discover our ideas ↗" data-si="අපේ අදහස් සොයන්න ↗">Discover our ideas ↗</a></div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="videos">
+      <div class="section-heading"><div><div class="section-kicker">02 / <span data-en="WATCH & REFLECT" data-si="බලන්න සහ සිතන්න">WATCH & REFLECT</span></div><h2 data-en="Words that move you." data-si="ඔබව ඉදිරියට ගෙනයන වචන.">Words that move you.</h2></div><a class="underlined-link" id="youtubeLink" href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube channel ↗</a></div>
+      <div class="video-grid">
+        <article class="video-card video-feature"><div class="video-placeholder"><div class="play-button">▶</div><span class="video-label">FEATURED VIDEO</span><span class="video-time">LONG FORM</span></div><div class="video-info"><div><h3 data-en="Build a mindset that lasts" data-si="දිගුකාලීන මානසික ශක්තියක් ගොඩනඟන්න">Build a mindset that lasts</h3><p data-en="A reminder to keep showing up." data-si="නිරන්තරයෙන් උත්සාහ කිරීමේ වැදගත්කම.">A reminder to keep showing up.</p></div><span class="arrow-round">↗</span></div></article>
+        <article class="video-card"><div class="video-placeholder video-placeholder-two"><div class="play-button">▶</div><span class="video-label">SHORTS</span></div><div class="video-info"><div><h3 data-en="One choice can change your day" data-si="එක් තීරණයකින් දවස වෙනස් කළ හැකියි">One choice can change your day</h3><p data-en="Quick inspiration for your feed." data-si="ඔබේ දවසට කෙටි ආශ්වාදයක්.">Quick inspiration for your feed.</p></div><span class="arrow-round">↗</span></div></article>
+        <article class="video-card"><div class="video-placeholder video-placeholder-three"><div class="play-button">▶</div><span class="video-label">MINDSET</span></div><div class="video-info"><div><h3 data-en="Discipline over excuses" data-si="නිදහසට කරුණු වෙනුවට විනය">Discipline over excuses</h3><p data-en="Progress starts with action." data-si="ප්‍රගතිය ආරම්භ වන්නේ ක්‍රියාවෙන්.">Progress starts with action.</p></div><span class="arrow-round">↗</span></div></article>
+      </div>
+      <p class="small-note" data-en="Demo content shown here. Add your real YouTube video links in the admin setup guide." data-si="මෙහි දැක්වෙන්නේ ආදර්ශ අන්තර්ගතයකි. ඔබේ සැබෑ YouTube වීඩියෝ සබැඳි පසුව එක් කරන්න.">Demo content shown here. Add your real YouTube video links in the admin setup guide.</p>
+    </section>
+
+    <section class="section blog-section" id="blog">
+      <div class="section-heading"><div><div class="section-kicker">03 / <span data-en="THE JOURNAL" data-si="ලිපි එකතුව">THE JOURNAL</span></div><h2 data-en="Ideas worth keeping." data-si="මතකයේ තබාගත යුතු අදහස්.">Ideas worth keeping.</h2></div><span class="section-subtitle" data-en="Notes on mindset, habits & becoming." data-si="සිතුවිලි, පුරුදු සහ දියුණුව ගැන.">Notes on mindset, habits & becoming.</span></div>
+      <div class="blog-grid" id="blogGrid">
+        <article class="blog-card"><div class="blog-art art-one"><span>01</span><b>GROW<br>DAILY.</b></div><div class="blog-meta"><span>MINDSET</span><span>5 MIN READ</span></div><h3>The power of showing up, even on hard days</h3><p>Small, consistent actions can take you further than a perfect plan that never begins.</p><a class="read-link" href="#newsletter">Read article ↗</a></article>
+        <article class="blog-card"><div class="blog-art art-two"><span>02</span><b>LESS<br>NOISE.</b></div><div class="blog-meta"><span>FOCUS</span><span>4 MIN READ</span></div><h3>Protect your focus in a distracted world</h3><p>Your attention is valuable. Learn to give it to the things that matter most.</p><a class="read-link" href="#newsletter">Read article ↗</a></article>
+        <article class="blog-card"><div class="blog-art art-three"><span>03</span><b>START<br>NOW.</b></div><div class="blog-meta"><span>DISCIPLINE</span><span>3 MIN READ</span></div><h3>You don't need to feel ready to begin</h3><p>Confidence often comes after you take the first step, not before it.</p><a class="read-link" href="#newsletter">Read article ↗</a></article>
+      </div>
+      <div class="center-action"><a class="button button-outline" href="#blog" id="loadPosts">View all articles ↗</a></div>
+    </section>
+
+    <section class="section poll-section" id="polls">
+      <div class="poll-copy"><div class="section-kicker">04 / <span data-en="YOUR VOICE MATTERS" data-si="ඔබේ අදහස වැදගත්">YOUR VOICE MATTERS</span></div><h2 data-en="What are you working on right now?" data-si="මේ දවස්වල ඔබ වැඩිදියුණු කරගන්නේ කුමක්ද?">What are you working on right now?</h2><p data-en="Growth looks different for everyone. Tell our community what matters to you." data-si="එක් එක් අයගේ වර්ධනය වෙනස්. ඔබට වැදගත් දේ අපේ ප්‍රජාව සමඟ බෙදාගන්න.">Growth looks different for everyone. Tell our community what matters to you.</p></div>
+      <form class="poll-card" id="pollForm"><div class="poll-top"><span>COMMUNITY POLL</span><span class="live-dot">● LIVE DEMO</span></div><fieldset><legend data-en="Choose one answer" data-si="එක් පිළිතුරක් තෝරන්න">Choose one answer</legend><label class="poll-option"><input type="radio" name="poll" value="Discipline" required><span data-en="Building discipline" data-si="විනය ගොඩනඟා ගැනීම">Building discipline</span><i></i></label><label class="poll-option"><input type="radio" name="poll" value="Confidence"><span data-en="Growing confidence" data-si="ආත්ම විශ්වාසය වැඩි කරගැනීම">Growing confidence</span><i></i></label><label class="poll-option"><input type="radio" name="poll" value="Focus"><span data-en="Improving focus" data-si="අවධානය වැඩි කරගැනීම">Improving focus</span><i></i></label><label class="poll-option"><input type="radio" name="poll" value="Goals"><span data-en="Working toward my goals" data-si="මගේ ඉලක්ක කරා යාම">Working toward my goals</span><i></i></label></fieldset><button class="button poll-submit" type="submit" data-en="Submit my vote ↗" data-si="මගේ ඡන්දය ලබාදෙන්න ↗">Submit my vote ↗</button><p class="form-message" id="pollMessage" aria-live="polite">Demo only — connect Supabase to save votes.</p></form>
+    </section>
+
+    <section class="section review-section" id="reviews">
+      <div class="section-heading"><div><div class="section-kicker">05 / <span data-en="COMMUNITY NOTES" data-si="ප්‍රජාවේ අදහස්">COMMUNITY NOTES</span></div><h2 data-en="A little encouragement goes far." data-si="කුඩා දිරිගැන්වීමක් වුණත් වටිනවා.">A little encouragement goes far.</h2></div><div class="review-rating"><strong>★ ★ ★ ★ ★</strong><span data-en="Your feedback helps us grow" data-si="ඔබේ අදහස් අපට දියුණු වීමට උපකාරී වේ">Your feedback helps us grow</span></div></div>
+      <div class="review-layout"><div class="review-quote"><span class="quote-mark">“</span><p data-en="The goal is not to be better than someone else. The goal is to be better than yesterday." data-si="අරමුණ වෙනත් කෙනෙකුට වඩා හොඳ වීම නොවේ. ඊයේ සිටි ඔබට වඩා අද හොඳ වීමයි.">The goal is not to be better than someone else. The goal is to be better than yesterday.</p><span class="review-by">WORDS HUB / COMMUNITY THOUGHT</span></div>
+      <form class="review-form" id="reviewForm"><h3 data-en="Leave a review" data-si="ඔබේ අදහස ලියන්න">Leave a review</h3><p data-en="Share your experience with WORDS HUB." data-si="WORDS HUB ගැන ඔබේ අත්දැකීම බෙදාගන්න.">Share your experience with WORDS HUB.</p><label for="reviewName" data-en="Your name" data-si="ඔබේ නම">Your name</label><input id="reviewName" name="name" maxlength="60" placeholder="Name / නම" required><label data-en="Your rating" data-si="ඔබේ ඇගයීම">Your rating</label><div class="stars" role="radiogroup" aria-label="Rating"><label><input type="radio" name="rating" value="1" required><span>★</span></label><label><input type="radio" name="rating" value="2"><span>★</span></label><label><input type="radio" name="rating" value="3"><span>★</span></label><label><input type="radio" name="rating" value="4"><span>★</span></label><label><input type="radio" name="rating" value="5"><span>★</span></label></div><label for="reviewText" data-en="Your review" data-si="ඔබේ සමාලෝචනය">Your review</label><textarea id="reviewText" name="review" rows="3" maxlength="1000" placeholder="Write your thoughts..." required></textarea><button class="button" type="submit" data-en="Send review ↗" data-si="සමාලෝචනය යවන්න ↗">Send review ↗</button><p class="form-message" id="reviewMessage" aria-live="polite">Demo only — reviews are not saved yet.</p></form></div>
+      <div class="review-list" id="reviewList"></div>
+    </section>
+
+    <section class="newsletter-section" id="newsletter"><div><div class="section-kicker">06 / <span data-en="KEEP GROWING" data-si="අඛණ්ඩව දියුණු වන්න">KEEP GROWING</span></div><h2 data-en="Make room for a better you." data-si="වඩා හොඳ ඔබ වෙනුවෙන් ඉඩක් වෙන්කරගන්න.">Make room for a better you.</h2><p data-en="Follow WORDS HUB for more ideas, videos and reminders to keep moving forward." data-si="තවත් අදහස්, වීඩියෝ සහ ඉදිරියට යාමට මතක් කිරීම් සඳහා WORDS HUB සමඟ එක්වන්න.">Follow WORDS HUB for more ideas, videos and reminders to keep moving forward.</p></div><a class="button button-light" href="#socials" data-en="Find us online ↗" data-si="අපව සොයාගන්න ↗">Find us online ↗</a></section>
+  </main>
+
+  <footer class="site-footer" id="socials"><div class="footer-top"><a class="footer-brand" href="#home"><img src="assets/wordshub-logo.png" alt="WORDS HUB logo"></a><p data-en="A mindset for growth. A space for possibility." data-si="වර්ධනයට සුදුසු මානසිකත්වයක්. නව හැකියාවන් සඳහා අවකාශයක්.">A mindset for growth. A space for possibility.</p><div class="social-links"><a href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube ↗</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok ↗</a><a href="https://whatsapp.com/" target="_blank" rel="noopener">WhatsApp ↗</a></div></div><div class="footer-bottom"><span>© <span id="year"></span> WORDS HUB. All rights reserved.</span><a href="admin.html">Admin access</a><span>MADE TO INSPIRE.</span></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
