@@ -1,5 +1,6 @@
 /* Admin starter: use only Supabase URL + publishable/anon key in browser. */
-const ADMIN_SUPABASE_URL = "https://dskoagxemyscweqelzey.supabase.co/rest/v1/"; // Add Supabase Project URL
+const ADMIN_SUPABASE_URL = 
+const ADMIN_SUPABASE_URL = "https://dskoagxemyscweqelzey.supabase.co"; // Add Supabase Project URL
 const ADMIN_SUPABASE_ANON_KEY = "sb_publishable_zs3YnERDuRTuMQ6oOOiytQ_vpFQaV9w"; // Add publishable/anon key; NEVER service_role
 let adminDb = null;
 if (window.supabase && ADMIN_SUPABASE_URL && ADMIN_SUPABASE_ANON_KEY) adminDb = window.supabase.createClient(ADMIN_SUPABASE_URL, ADMIN_SUPABASE_ANON_KEY);
